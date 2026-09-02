@@ -7,8 +7,7 @@ import streamlit as st
 
 # ==========================================
 # مفتاح الـ API الخاص بكِ
-API_KEY = "AIzaSyA9MCj4YVLYX5RovL8K_a3xLTXVSRgJisM"
-# ==========================================
+API_KEY = st.secrets.get("GEMINI_API_KEY", "")# ==========================================
 
 st.set_page_config(
     page_title="منصة معالم الجوف الذكية", page_icon="🇸🇦", layout="centered"
