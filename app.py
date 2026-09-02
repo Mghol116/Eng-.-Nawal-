@@ -10,17 +10,17 @@ import streamlit as st
 API_KEY = st.secrets.get("GEMINI_API_KEY", "")# ==========================================
 
 st.set_page_config(
-    page_title="منصة معالم الجوف الذكية", page_icon="🇸🇦", layout="centered"
+    page_title="منصة معالم الذكية", page_icon="🇸🇦", layout="centered"
 )
 
 st.title("🇸🇦 منصة معالم الجوف الذكية - اليوم الوطني 96")
 st.write(
-    "مرحباً بكِ في مشروعكِ الابتكاري! ارفعي صورة لأحد معالم الجوف وسيقوم"
+    "مرحباً بكِ في مشروعكِ الابتكاري! ارفعي صورة لأحد معالم  وسيقوم"
     " الذكاء الاصطناعي بتحليلها والتعرف عليها تلقائياً."
 )
 
 uploaded_file = st.file_uploader(
-    "اختر صورة معلم تاريخي في الجوف...", type=["jpg", "png", "jpeg"]
+    "اختر صورة معلم تاريخي  ...", type=["jpg", "png", "jpeg"]
 )
 
 if uploaded_file is not None:
