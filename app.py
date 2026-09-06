@@ -15,7 +15,7 @@ st.set_page_config(
 )
 
 # ==========================================
-# 2. تحويل الصورة إلى Base64 وتطبيق الـ CSS (لتوسيط المحتوى في المنتصف)
+# 2. تحويل الصورة إلى Base64 وتطبيق الـ CSS
 # ==========================================
 image_path = "banner.jpg"
 
@@ -134,7 +134,7 @@ if uploaded_file is not None:
             """
 
             response = client.models.generate_content(
-                model="gemini-2.5-flash",
+                model="gemini-3.6-flash",
                 contents=[image_part, prompt],
             )
 
